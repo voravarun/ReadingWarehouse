@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--Template-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-43dp">
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="367dp"
+            android:layout_height="706dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="0dp"
+            android:background="@android:color/white"
+            tools:ignore="MissingConstraints">
+
+            <FrameLayout
+                android:id="@+id/name_frame"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="#525FE1"
+                tools:ignore="MissingConstraints" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingVertical="5dp">
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/home_nav"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:padding="2dp"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:src="@drawable/home" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="@string/home" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/tobuy_nav"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:padding="2dp"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:src="@drawable/tobuylist" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="@string/tobuy" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/scan_nav"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:padding="2dp"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:src="@drawable/barcode" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="@string/scan" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/cal_nav"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:padding="2dp"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:src="@drawable/calculator" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:shadowColor="#FFFFFF"-->
+<!--                    android:text="@string/calculator"-->
+<!--                    android:textColor="#525FE1" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/myshelf_nav"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:padding="2dp"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:src="@drawable/myshelf" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="@string/myshelf" />-->
+
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--Function-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editTextPrice"
+            android:layout_width="316dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="16dp"
+            android:hint="Enter Price"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDiscount" />
+
+        <EditText
+            android:id="@+id/editTextDiscount"
+            android:layout_width="315dp"
+            android:layout_height="47dp"
+            android:hint="Enter Discount (%)"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.185"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:text="Calculate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPrice" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="164dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="16dp"
+            android:text="Result: "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.194"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPrice" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Calculator"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextDiscount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include layout="@layout/nav_menu" />
+
+</RelativeLayout>

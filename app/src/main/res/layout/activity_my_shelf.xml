@@ -1,0 +1,35 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- RecyclerView to display books to buy -->
+
+    <!-- Button to navigate to MyShelfFormActivity -->
+    <TextView
+        android:id="@+id/textViewBooksToBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="User's Book"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBooksToBuy"
+        android:layout_width="391dp"
+        android:layout_height="687dp"
+        android:layout_below="@id/textViewBooksToBuy"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/addBookButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerViewBooksToBuy"
+        android:layout_marginTop="10dp"
+        android:text="Add Book" />
+</RelativeLayout>

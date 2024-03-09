@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1065991916239",
+    "project_id": "reading-warehouse",
+    "storage_bucket": "reading-warehouse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065991916239:android:5a2a759afe161a0734c5ba",
+        "android_client_info": {
+          "package_name": "com.example.readingwarehouse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRRiwPbtgEl_fTpARgm3DM9mzBIEYBCd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

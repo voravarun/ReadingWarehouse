@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ReadingWarehouse</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="home">Home</string>
+    <string name="tobuy">To buy</string>
+    <string name="scan">Scan</string>
+    <string name="calculator">Calculator</string>
+    <string name="myshelf">My Shelf</string>
+    <string name="hto_buy">To buy</string>
+    <string name="b_name">Book Name</string>
+    <string name="b_image">Book Image</string>
+    <string name="b_author">Author</string>
+    <string name="b_vol">Volume</string>
+    <string name="b_price">Price</string>
+    <string name="b_currency">à¸¿</string>
+    <string name="add_t_tobuy">Add to To Buy</string>
+    <string name="add">+</string>
+    <string name="add_icon">add_icon</string>
+    <string name="book_image">book_image</string>
+    <string name="add_img">Add the image</string>
+</resources>

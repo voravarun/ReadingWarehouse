@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Barcode &amp; QR Code Scan"
+            android:textAlignment="center"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cameraBtn"
+                android:layout_width="339dp"
+                android:layout_height="59dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:text="CAMERA" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/galleryBtn"
+                android:layout_width="336dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:text="GALLERY" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageIv"
+            android:layout_width="match_parent"
+            android:layout_height="241dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/border"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/scanBtn"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:text="Add to My Shelf" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESULT :" />
+
+        <TextView
+            android:id="@+id/resultTv"
+            android:layout_width="match_parent"
+            android:layout_height="98dp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

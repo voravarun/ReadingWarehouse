@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToBuyFormActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/head_BuyForm"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/appbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white"/>
+
+    <FrameLayout
+        android:layout_width="330dp"
+        android:layout_height="573dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:id="@+id/tobuy_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="15dp"
+            android:paddingTop="15dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/select_img"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@color/item"
+                android:src="@drawable/image"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/b_name"
+                style="@style/h3_b"/>
+
+            <EditText
+                android:id="@+id/book_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:autofillHints="The Lord of the Ring"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/b_author"
+                style="@style/h3_b"/>
+
+            <EditText
+                android:id="@+id/book_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:autofillHints="J.R.R. Tolkien"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/b_image"
+                style="@style/h3_b"/>
+
+            <Button
+                android:id="@+id/add_img"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginVertical="5dp"
+                android:text="@string/add_img"
+                android:textSize="11sp"
+                app:icon="@drawable/image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/b_vol"
+                style="@style/h3_b"/>
+
+            <EditText
+                android:id="@+id/book_vol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:autofillHints="4"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/b_price"
+                style="@style/h3_b"/>
+
+            <EditText
+                android:id="@+id/book_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:autofillHints="490"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/add_item"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:text="@string/add_t_tobuy"
+                style="@style/h3_b"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <include layout="@layout/nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

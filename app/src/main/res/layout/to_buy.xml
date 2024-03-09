@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToBuyActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/head_ToBuy"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/appbar"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/hto_buy"
+        app:titleTextColor="@color/white"
+        tools:listitem="@layout/tobuybitem"/>
+
+    <FrameLayout
+        android:layout_width="330dp"
+        android:layout_height="573dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tobuy_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/head_ToBuy"
+            tools:listitem="@layout/tobuybitem"/>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/addBuyB"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/add_button"
+        android:text="@string/add"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Include button navigator nav_menu.xml -->
+    <include layout="@layout/nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
