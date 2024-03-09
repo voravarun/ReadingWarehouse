@@ -1,11 +1,11 @@
 # Reading Warehouse
 
 This application is a part of final group project for DSA-444 Application Mobile Development subject by TNIC students.
-<center>
+<div style="text-align: center;">
 
 ![Project Image](SplashPage.png)
 
-</center>
+</div>
 
 ## Table of Contents
 - [Project Title](#project-title)
