@@ -27,9 +27,9 @@ moreover, forget to buy the book they already have.
 ## Features
 
 - **MyShelf:** Store the book thar they read in their database
-- **To Buy:** Making To buy list to check what they want to buy at the book fiar
+- **To Buy:** Making To buy list to check what they want to buy at the book fair
 - **Calculator:** to calculate the discount price form the percent discount label
-- **Scanning:** A feature, to Scan and store book data in the database. Also, this feature compare the resut with the database to show that you have already buy it or it is in the to buy list
+- **Scanning:** A feature, to Scan and store book data in the database. Also, this feature compare the result with the database (My Shelf/To Buy) to show that you have already buy it or not.
 
 
 ## Installation
